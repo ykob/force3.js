@@ -1,11 +1,11 @@
 # force3
 
 JavaScript class for calculating acceleration.  
-this class has a simple method such as Friction, drag, Hooke's law.
+this class has a simple method such as Friction, drag, Hooke's law.  
 depend on [three.js](http://threejs.org/).
 
-加速度計算のためのJavaScriptのクラスです。
-摩擦、抗力、フックの法則などのための、簡単なメソッドも含まれています。
+加速度計算のためのJavaScriptのクラスです。  
+摩擦、抗力、フックの法則などのための、簡単なメソッドも含まれています。  
 [three.js](http://threejs.org/)に依存しています。
 
 it's used as below.
