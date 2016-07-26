@@ -8,9 +8,13 @@ depend on [glMatrix](http://glmatrix.net/) or [three.js](http://threejs.org/).
 摩擦、抗力、フックの法則などのための、簡単なメソッドも含まれています。  
 [glMatrix](http://glmatrix.net/)または[three.js](http://threejs.org/)に依存しています。
 
+---
+
 it's used as below.
 
 以下のような使い方をします。
+
+## use glMatrix
 
     import force3 from 'force3.js';
     const velocity = [1, 0, 0];
@@ -19,6 +23,8 @@ it's used as below.
     force3.applyHook(velocity, acceleration, anchor, 0, 0.1);
     force3.applyDrag(acceleration, 0.1);
     force3.updateVelocity(velocity, acceleration, 1);
+
+## use three.js
 
     const force = new Force3();
     force.applyHook(0, 0.1);
