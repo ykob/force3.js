@@ -1,6 +1,10 @@
 const glMatrix = require('gl-matrix');
 
 export default {
+  updateVelocity: (velocity, acceleration, mass) => {
+    glMatrix.vec3.scale(acceleration, acceleration, 1 / mass);
+    glMatrix.vec3.add(velocity, velocity, acceleration);
+  },
   applyFriction: (acceleration, mu, n) => {
     const friction = [0, 0, 0];
     glMatrix.vec3.scale(friction, acceleration, -1);
